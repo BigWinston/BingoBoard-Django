@@ -1,0 +1,18 @@
+{% extends "main/base.html" %}
+{% block title %}Customers{% endblock %}
+{% block page-title %}Customers{% endblock %}
+{% block content %}
+<section class="hero is-small mt-6">
+    <div class="columns">
+        <div class="column"></div>
+        <div class="column is-two-thirds">
+            <ol>
+                {% for customer in customer_list %}
+                <li>{{ customer }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="column"></div>
+    </div>
+</section>
+{% endblock %}

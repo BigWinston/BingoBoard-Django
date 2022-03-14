@@ -1,0 +1,19 @@
+{% extends "main/base.html" %}
+{% block title %}Staff{% endblock %}
+{% block page-title %}Staff{% endblock %}
+{% block content %}
+<section class="hero is-small mt-6">
+    <div class="columns">
+        <div class="column"></div>
+        <div class="column is-two-thirds">
+            <ol>
+                {% for staff in staff_list %}
+                <li>{{ staff }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="column"></div>
+    </div>
+</section>
+{% endblock %}
+
