@@ -49,16 +49,16 @@
                         <div class="navbar-item">
                             <div class="buttons">
                                 {% if user is defined and user is not none %}
-                                <a class="button is-danger" href="./logout">
-                                <strong>Log Out</strong>
-                                </a>
-                                {% else %}
-                                <a class="button is-link is-small" href="./login">
-                                <strong>Log In</strong>
-                                </a>
-                                <a class="button is-light is-small" href="./register">
-                                Register
-                                </a>
+                                    <a class="button is-danger" href="./logout">
+                                        <strong>Log Out</strong>
+                                    </a>
+                                    {% else %}
+                                    <a class="button is-link is-small" href="./login">
+                                        <strong>Log In</strong>
+                                    </a>
+                                    <a class="button is-light is-small" href="./register">
+                                        Register
+                                    </a>
                                 {% endif %}
                             </div>
                         </div>
